@@ -13,6 +13,21 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* generics */
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* utils */ 
+
+.container-text {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
 /* header */
 
 header {
@@ -44,43 +59,45 @@ main h3 {
 
 /* video container */
 
-.video-container {
+.recipe-container {
     margin-top: 1rem;
 }
 
-.video-container h2 {
+.recipe-container h2 {
     color: #4e3969;
     font-size: 2rem;
 }
 
-.video-info {
+.recipe-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.video-info-star-rate {
+.recipe-info-star-rate {
     display: flex;
     gap: 20px;
     font-size: 1.2rem;
     align-items: center;
 }
 
-.video-stars i {
+.recipe-stars i {
     color: var(--yellow);
 }
 
-.video-stars span:nth-of-type(1) {
+.recipe-stars span:nth-of-type(1) {
     font-weight: bold;
 }
 
-.video-rate {
+.recipe-rate {
     background-color: var(--yellow);
     padding: 10px 20px;
     border-radius: 35px;
     color: white;
     font-weight: bold;
 }
+
+/* recipe */
 
 .video {
     margin-top: 1rem;
@@ -89,3 +106,110 @@ main h3 {
 .video iframe {
     max-width: 95vw;
 }
+
+/* recipe card */
+
+.recipe-card {
+    background-color: white;
+    padding: 2rem 0;
+    box-shadow: 2px 2px 24px grey;
+    border-radius: 5px;
+}
+
+.recipe-card-info {
+    background-color: #f6f5f9;
+    border-radius: 5px;
+}
+
+.recipe-card-info-calories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+}
+
+.recipe-card-info-calories span:nth-of-type(1) {
+    color: white;
+    background-color: #7b69a2;
+    font-size: 0.9rem;
+    padding: 3px 6px;
+    border-radius: 5px;
+    
+
+}
+
+.recipe-card-info-calories span:nth-of-type(2) {
+    color: var(--yellow);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.recipe-card-info hr {
+    margin: 0 1.2rem;
+}
+
+.recipe-card-info p {
+    padding: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* recipe list */
+
+.recipe-card-list {
+    padding: 2rem 0;
+    font-size: 1.1rem;
+}
+
+.recipe-card-list i {
+    color: var(--yellow);
+    margin-right: 5px;
+    
+}
+
+.recipe-card-list li {
+    padding: .5rem 0;
+}
+
+/* fine recipe*/
+
+
+/* social icons */
+
+.social-icons-container {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-around;
+}
+
+.social-icons {
+    background-color: white;
+    box-shadow: 0px 5px 10px grey;
+    padding: 15px 20px;
+    border-radius: 35px;
+    font-size: 1.2rem;
+}
+
+.social-icons p {
+    display: none;
+}
+
+/* colori icone social */
+
+#facebook {
+    color: #1a77f3;
+}
+#twitter {
+    color: #009eff;
+}
+#istagram {
+    color: #de6391;
+}
+#pinterest {
+    color: #e62d34;
+}
+#youtube {
+    color: #e62222;
+}
+
