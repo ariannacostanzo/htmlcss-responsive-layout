@@ -28,6 +28,12 @@ ul {
     margin: 0 auto;
 }
 
+.container {
+    max-width: 92vw;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
 /* header */
 
 header {
@@ -44,11 +50,7 @@ header {
 
 /* main */
 
-.container {
-    max-width: 95vw;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
+
 
 main h3 {
     text-transform: uppercase;
@@ -105,6 +107,7 @@ main h3 {
 
 .video iframe {
     max-width: 95vw;
+    margin: 0 auto;
 }
 
 /* recipe card */
@@ -113,7 +116,7 @@ main h3 {
     background-color: white;
     padding: 2rem 0;
     box-shadow: 2px 2px 24px grey;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
 }
 
 .recipe-card-info {
@@ -213,3 +216,69 @@ main h3 {
     color: #e62222;
 }
 
+/* article */
+
+article h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.3rem;
+}
+
+#orange-line {
+    height: 4px;
+    background-color: var(--yellow);
+    width: 19%;
+    margin: 1rem 0;
+}
+
+.article-img {
+    margin: 2rem auto 1rem auto;
+    text-align: center;
+}
+
+article img {
+    max-width: 80%;
+}
+
+article p {
+    line-height: 2.6rem;
+    font-size: 1.3rem;
+}
+
+
+/* fine article */
+
+/* footer */
+
+footer {
+    background-color: #7c69a4;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+address {
+    margin: 1rem 0;
+    font-style: normal;
+}
+
+.footer-nav {
+    padding:  0 3rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-nav a {
+    color: white;
+}
+
+/* fine footer */
