@@ -65,7 +65,12 @@ main h3 {
     margin-top: 1rem;
 }
 
-.recipe-container h2 {
+.titolo {
+    display: flex;
+    gap: 5px;
+}
+
+.titolo h2 {
     color: #4e3969;
     font-size: 2rem;
 }
@@ -74,6 +79,13 @@ main h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.titolo span {
+    color: #4e3969;
+    font-size: 2rem;
+    font-weight: bold;
+    display: none;
 }
 
 .recipe-info-star-rate {
@@ -106,7 +118,7 @@ main h3 {
 }
 
 .video iframe {
-    max-width: 95vw;
+    max-width: 92vw;
     margin: 0 auto;
 }
 
@@ -115,7 +127,7 @@ main h3 {
 .recipe-card {
     background-color: white;
     padding: 2rem 0;
-    box-shadow: 2px 2px 24px grey;
+    box-shadow: 0px 5px 10px rgb(192, 192, 192);
     border-radius: 0 0 5px 5px;
 }
 
@@ -188,10 +200,13 @@ main h3 {
 
 .social-icons {
     background-color: white;
-    box-shadow: 0px 5px 10px grey;
+    box-shadow: 0px 5px 10px rgb(192, 192, 192);
     padding: 15px 20px;
     border-radius: 35px;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-icons p {
@@ -216,6 +231,22 @@ main h3 {
     color: #e62222;
 }
 
+/* fine social icons */
+
+/* banner pubblicitario */
+
+.banner-container {
+    display: none;
+    margin: 2.5rem 0;
+}
+
+#banner {
+    max-width: 100%;
+}
+
+/* fine banner pubblicitario */
+
+
 /* article */
 
 article h2 {
@@ -234,15 +265,17 @@ article h2 {
 .article-img {
     margin: 2rem auto 1rem auto;
     text-align: center;
+    max-width: 80%;
 }
 
 article img {
-    max-width: 80%;
+    max-width: 100%;
 }
 
 article p {
     line-height: 2.6rem;
     font-size: 1.3rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -267,7 +300,7 @@ address {
 }
 
 .footer-nav {
-    padding:  0 3rem;
+    padding:  .5rem 3rem;
 }
 
 .footer-nav ul {

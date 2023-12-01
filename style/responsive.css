@@ -1,0 +1,96 @@
+/* sopra i 768 px  */
+
+@media screen and (min-width: 768px){
+
+    /* Il logo nell'header si allinea a sinistra */
+    header  {
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    /* Il padding del contenuto principale della pagina aumenta */
+
+    .container {
+        max-width: 87vw;
+        padding: 2rem 0;
+    }
+
+    .container-text {
+        max-width: 90%;
+    }
+
+    /* anche il video si allinea alle nuove dimensioni */
+
+    .video iframe {
+        max-width: 87vw;
+        
+    }
+
+    /* Compare il testo "(Dolce Tradizionale)" */
+
+    .titolo span {
+       display: inline;
+    }
+
+    /* La grandezza del titolo diventa più grande e il resto diminuisce */
+
+    .titolo h2, .titolo span {
+        font-size: 2.1rem;
+    }
+
+    .recipe-info-star-rate {
+        font-size: 1rem;
+        gap: 10px;
+    }
+
+    /* più padding della card */
+
+    .recipe-card {
+        padding: 3rem 0;
+    }
+
+    .recipe-card-list {
+        padding: 3rem 0 0 0;
+    }
+
+    /* Le informazioni della ricetta sotto il video si dispongono a griglia */
+
+    .recipe-card-list ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .recipe-card-list li {
+        flex-basis: calc(100% / 3);
+    }
+
+    /* I bottoni social si allargano */
+    .social-icons-container {
+        gap: 30px;
+        justify-content: space-around;
+    }
+    
+    .social-icons {
+        flex-basis: 20%;
+    }
+
+    /* compare il banner pubblicitario */
+
+    .banner-container {
+        display: block;
+    }
+
+    /* l'immagine nella descrizione della ricetta viene circondata dal testo */
+
+    .article-img {
+        float: left;
+        max-width: 40%;
+        margin: 1rem 2rem 0 0;
+    }
+
+    
+
+    
+
+
+}
