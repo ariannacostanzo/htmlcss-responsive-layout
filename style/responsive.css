@@ -80,13 +80,14 @@
         display: block;
     }
 
-    /* l'immagine nella descrizione della ricetta viene circondata dal testo */
+    /* l'immagine nella descrizione della ricetta viene circondata dal testo
+    già fatto da mobile */
 
-    .article-img {
+    /* .article-img {
         float: left;
         max-width: 40%;
         margin: 1rem 2rem 0 0;
-    }
+    } */
 
     
 }
@@ -128,6 +129,10 @@
 
      /* anche il video si allinea alle nuove dimensioni */
 
+     .video {
+        margin-top: 0;
+    }
+
      .video iframe {
         flex-grow: 1;
         height: 100%;
@@ -147,6 +152,17 @@
         display: inline;
         
     }
+
+    .social-icons-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .social-icons {
+        flex-basis: 15%;
+    }
+
+    
 
     /* NEl footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti */
     footer {
