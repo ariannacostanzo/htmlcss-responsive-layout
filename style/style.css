@@ -211,6 +211,10 @@ main h3 {
 
 .social-icons p {
     display: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-left: 10px;
 }
 
 /* colori icone social */

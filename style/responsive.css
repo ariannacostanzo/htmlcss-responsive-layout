@@ -89,8 +89,81 @@
     }
 
     
+}
+
+/* sopra i 992 px  */
+
+@media screen and (min-width: 992px){
+
+    /* si allargano i container */
+
+    .container {
+        max-width: 70vw;
+        padding: 2rem 0;
+    }
+
+    .container-text {
+        max-width: 85%;
+    }
+
+    /* La grandezza el titolo della ricetta  aumenta ancora di più */
+
+    .titolo h2, .titolo span {
+        font-size: 2.5rem;
+    }
 
     
+
+    /* Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro */
+    .recipe {
+        display: flex;
+        padding: 2rem 0;
+    }
+
+    .recipe-card {
+        flex-basis: 20%;
+        flex-grow: 1;
+        border-radius: 5px;
+    }
+
+     /* anche il video si allinea alle nuove dimensioni */
+
+     .video iframe {
+        flex-grow: 1;
+        height: 100%;
+        width: 40vw;
+        
+    }
+
+    /* Le informazioni della ricetta tornano a disporsi una sotto l'altra */
+
+    .recipe-card-list ul {
+        flex-direction: column;
+    }
+
+    /* Compaiono i nomi delle piattaforme social */
+
+    .social-icons p {
+        display: inline;
+        
+    }
+
+    /* NEl footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti */
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer-info {
+        padding-left: 2rem;
+    }
+
+    footer p {
+        padding-top: 1rem;
+    }
+
 
 
 }
