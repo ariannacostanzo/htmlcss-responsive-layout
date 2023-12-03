@@ -34,7 +34,7 @@
 
     /* La grandezza del titolo diventa più grande e il resto diminuisce */
 
-    .titolo h2, .titolo span {
+    .titolo h3, .titolo span {
         font-size: 2.1rem;
     }
 
@@ -80,14 +80,20 @@
         display: block;
     }
 
-    /* l'immagine nella descrizione della ricetta viene circondata dal testo
-    già fatto da mobile */
+    /* l'immagine nella descrizione della ricetta viene circondata dal testo,
+    già fatto su style.css */
 
     /* .article-img {
         float: left;
         max-width: 40%;
         margin: 1rem 2rem 0 0;
     } */
+
+    /* diminuisco le dimensioni dell'immagine */
+
+    .article-img {
+        max-width: 35%;
+    }
 
     
 }
@@ -108,10 +114,12 @@
     }
 
     /* La grandezza el titolo della ricetta  aumenta ancora di più */
+    /* il titolo lo faccio aumentare da 1085 px in più altrimenti non c'è abbastanza
+    spazio poichè diminuisco già la dimensione del container */
 
-    .titolo h2, .titolo span {
+    /* .titolo h3, .titolo span {
         font-size: 2.5rem;
-    }
+    } */
 
     
 
@@ -183,3 +191,14 @@
 
 
 }
+
+/* aumento le dimensioni dell h2 dai 1085 px in poi perchè in quello spazio (da 992px a 1085px)
+non è abbastanza per contenere il testo più grande */
+
+@media screen and (min-width: 1085px){
+    .titolo h3, .titolo span {
+        font-size: 2.5rem;
+    }
+
+}
+

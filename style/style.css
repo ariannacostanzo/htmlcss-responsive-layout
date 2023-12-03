@@ -40,7 +40,7 @@ header {
     text-transform: uppercase;
     font-family: 'Nerko One', cursive;
     color: var(--yellow);
-    text-shadow: 2px 2px 2px #707070;
+    text-shadow: 1px 1px 1px #707070;
     font-size: 1.7rem;
     text-align: center;
     height: 90px;
@@ -52,11 +52,12 @@ header {
 
 
 
-main h3 {
+main h2 {
     text-transform: uppercase;
     color: gray;
     letter-spacing: 3px;
     font-weight: 400;
+    font-size: 1.2rem;
 }
 
 /* video container */
@@ -70,7 +71,7 @@ main h3 {
     gap: 5px;
 }
 
-.titolo h2 {
+.titolo h3 {
     color: #4e3969;
     font-size: 2rem;
 }
@@ -120,6 +121,7 @@ main h3 {
 .video iframe {
     max-width: 92vw;
     margin: 0 auto;
+    display: block;
 }
 
 /* recipe card */
@@ -245,7 +247,7 @@ main h3 {
 }
 
 #banner {
-    max-width: 100%;
+    width: 100%;
 }
 
 /* fine banner pubblicitario */
@@ -253,7 +255,7 @@ main h3 {
 
 /* article */
 
-article h2 {
+article h3 {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 2.3rem;
